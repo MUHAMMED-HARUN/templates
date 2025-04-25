@@ -593,3 +593,40 @@ background:  rgba(0, 150, 115, 0.5);;
 left: 0;
 background: rgba(0, 117, 150, 0.5);;
 }
+.testimonials {
+  padding: var(--section-padding) 0;
+  background-color: var(--section-back-ground-color);
+}
+.testimonials .container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(300px ,1fr));
+   gap: 40px;
+}
+.testimonials .container .box{
+  background-color: white;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.testimonials .container .box img{
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10px ,-50%); 
+  box-shadow: 0 0 0px 9px var(--section-back-ground-color);
+}
+.testimonials .container .box h4{
+  font-size: 20px;
+}
+.testimonials .container .box p{
+  color: var(--caption-color);
+  line-height: 1.4;
+} 
+.testimonials .container .box i.filled{
+  color: #ffc107;
+}
